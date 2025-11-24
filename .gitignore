@@ -1,0 +1,14 @@
+# *
+
+# !.gitignore
+# !Makefile
+# !src/
+# !src/**
+# !Makefile
+
+
+obj/
+.vscode
+a.out
+test.cpp
+megaphone
