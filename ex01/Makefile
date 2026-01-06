@@ -1,4 +1,4 @@
-NAME = megaphone
+NAME = phonebook
 
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
@@ -7,7 +7,7 @@ SRC_DIR = src/
 OBJ_DIR = obj/
 INC_DIR = include/
 
-SRC_FILES = megaphone.cpp
+SRC_FILES = main.cpp PhoneBook.cpp Contact.cpp
 OBJ_FILES = $(SRC_FILES:.cpp=.o)
 
 SRC = $(addprefix $(SRC_DIR), $(SRC_FILES))
@@ -29,17 +29,17 @@ $(OBJ_DIR)%.o:$(SRC_DIR)%.cpp
 clean:
 	@if [ -d "$(OBJ_DIR)" ]; then \
 		rm -rf $(OBJ_DIR); \
-		echo "Deleting all objects from /ex00..."; \
+		echo "Deleting all objects from /ex01..."; \
 	else \
-		echo "No objects to remove from /ex00."; \
+		echo "No objects to remove from /ex01."; \
 	fi;
 
 fclean: clean
 	@if [ -f "$(NAME)" ]; then \
 		rm -f $(NAME); \
-		echo "Deleting $(NAME) from /ex00..."; \
+		echo "Deleting $(NAME) from /ex01..."; \
 	else \
-		echo "No executable to remove from ex00."; \
+		echo "No executable to remove from ex01."; \
 	fi;
 
 re: fclean all

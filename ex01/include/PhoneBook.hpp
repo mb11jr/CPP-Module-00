@@ -6,14 +6,14 @@
 class PhoneBook
 {
 	private:
-		Contact _contacts[8];
+		Contact contacts[8];
+		int		index;
 	public:
 		PhoneBook();
 		~PhoneBook();
-		int			check_pb();
-		PhoneBook	del_one(PhoneBook pb);
-		void		display(PhoneBook pb);
-		PhoneBook 	add_i(PhoneBook pb, int i);
+
+		void	add_contact();
+		void	search_pb();
 };
 
 #endif

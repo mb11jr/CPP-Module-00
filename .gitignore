@@ -1,14 +1,7 @@
-# *
-
-# !.gitignore
-# !Makefile
-# !src/
-# !src/**
-# !Makefile
-
-
+phonebook
+megaphone
 obj/
+*.o
 .vscode
 a.out
 test.cpp
-megaphone

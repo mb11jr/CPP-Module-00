@@ -1,29 +1,21 @@
 #include "Contact.hpp"
 
-Contact::Contact(std::string first_name, std::string last_name, std::string nickname, std::string phone_number, std::string secret)
-{
-	this->first_name = first_name;
-	this->last_name = last_name;
-	this->nickname = nickname;
-	this->phone_number = phone_number;
-	this->secret = secret;
-}
+Contact::Contact() {}
 
-Contact::Contact()
-{
-	return;
-}
+Contact::~Contact() {}
 
-Contact::~Contact()
+void Contact::set_info(std::string f, std::string l, std::string n, std::string p, std::string s)
 {
-	return;
+    this->first_name = f;
+    this->last_name = l;
+    this->nickname = n;
+    this->phone_number = p;
+    this->secret = s;
 }
 
 int	Contact::is_null()
 {
-	if(this->first_name.empty())
-		return 1;
-	return 0;
+	return (this->first_name.empty());
 }
 
 void Contact::print_info(int i)
