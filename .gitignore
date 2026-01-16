@@ -1,6 +1,5 @@
 phonebook
 megaphone
-obj/
 *.o
 .vscode
 a.out
